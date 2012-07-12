@@ -1,6 +1,6 @@
 # ogg pkg-config file
 
-prefix=/Users/ryan/Desktop/speex/build/libogg/armv7
+prefix=/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/armv7
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
