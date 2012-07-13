@@ -48,13 +48,21 @@ do
 
 done
 
-mkdir -p ${CURRENTPATH}/build/${LIB}/Fat
+echo "== We just need static library == "
+echo " == Copy headers to fat folder from i386 folder AND clean files in lib =="
+cp -r ${CURRENTPATH}/build/${LIB}/i386/ ${CURRENTPATH}/build/${LIB}/Fat
+rm -rf ${CURRENTPATH}/build/${LIB}/Fat/lib/*
 
-echo "Build library..."
-lipo -create ${CURRENTPATH}/build/${LIB}/i386/lib/lib${LIB}.a ${CURRENTPATH}/build/${LIB}/armv6/lib/lib${LIB}.a ${CURRENTPATH}/build/${LIB}/armv7/lib/lib${LIB}.a -output ${CURRENTPATH}/build/${LIB}/Fat/lib${LIB}.a
+echo "Build library - libspeex.a"
+lipo -create ${CURRENTPATH}/build/${LIB}/i386/lib/lib${LIB}.a ${CURRENTPATH}/build/${LIB}/armv6/lib/lib${LIB}.a ${CURRENTPATH}/build/${LIB}/armv7/lib/lib${LIB}.a -output ${CURRENTPATH}/build/${LIB}/Fat/lib/lib${LIB}.a
+
+echo "Build library - libspeexdsp.a"
+lipo -create ${CURRENTPATH}/build/${LIB}/i386/lib/lib${LIB}dsp.a ${CURRENTPATH}/build/${LIB}/armv6/lib/lib${LIB}dsp.a ${CURRENTPATH}/build/${LIB}/armv7/lib/lib${LIB}dsp.a -output ${CURRENTPATH}/build/${LIB}/Fat/lib/lib${LIB}dsp.a
+
 
 echo "======== CHECK FAT ARCH ========"
-lipo -info ${CURRENTPATH}/build/${LIB}/Fat/lib${LIB}.a
+lipo -info ${CURRENTPATH}/build/${LIB}/Fat/lib/lib${LIB}.a
+lipo -info ${CURRENTPATH}/build/${LIB}/Fat/lib/lib${LIB}dsp.a
 echo "======== CHECK DONE ========"
 
 echo "== Done =="

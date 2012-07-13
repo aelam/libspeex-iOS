@@ -44,9 +44,9 @@ speexdec.o: speexdec.c ../config.h \
   ../include/speex/speex.h ../include/speex/speex_bits.h \
   ../include/speex/speex_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/sys/types.h \
-  /Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/ogg.h \
+  /Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/ogg.h \
   /usr/bin/../lib/clang/3.1/include/stddef.h \
-  /Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/os_types.h \
+  /Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/os_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/architecture/arm/math.h \
@@ -147,11 +147,11 @@ speexdec.o: speexdec.c ../config.h \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/sys/types.h:
 
-/Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/ogg.h:
+/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/ogg.h:
 
 /usr/bin/../lib/clang/3.1/include/stddef.h:
 
-/Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/os_types.h:
+/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/os_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/inttypes.h:
 

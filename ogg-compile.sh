@@ -9,7 +9,7 @@ LIB="libogg"
 DEVELOPER=`xcode-select -print-path`
 ARCHS="i386 armv6 armv7"
 #ARCHS="armv6"
-#ARCHS='i386'
+ARCHS='i386'
 CURRENTPATH=`pwd`
 BUILD="x86_64-apple-darwin11"
 OLD_PATH=$PATH
@@ -30,8 +30,6 @@ do
     SDK="${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer/SDKs/${PLATFORM}${SDKVERSION}.sdk"
 
     export CC="clang -arch ${ARCH} -isysroot ${SDK}"
-#    export CC="clang"
-#    export CFLAGS="-arch ${ARCH} -isysroot ${SDK}"
     export CXXFLAGS="$CFLAGS"
     export LDFLAGS="$CFLAGS"
     export LD=$CC
@@ -43,7 +41,7 @@ do
     echo "Please stand by..."
 
     ./configure --prefix=$PREFIX --host=${HOST} -build=${BUILD} 
-#CC="${CC}  -std=c99 -arch ${ARCH} -isysroot ${SDK}"
+
     make clean
     make && make install
 
@@ -53,10 +51,12 @@ do
 
 done
 
-mkdir -p ${CURRENTPATH}/build/${LIB}/Fat
+echo " == Copy headers to fat folder from i386 folder AND clean files in lib =="
+cp -r ${CURRENTPATH}/build/${LIB}/i386/ ${CURRENTPATH}/build/${LIB}/Fat
+rm -rf ${CURRENTPATH}/build/${LIB}/Fat/lib/*
 
 echo "Build library..."
-lipo -create ${CURRENTPATH}/build/${LIB}/i386/lib/${LIB}.a ${CURRENTPATH}/build/${LIB}/armv6/lib/${LIB}.a ${CURRENTPATH}/build/${LIB}/armv7/lib/${LIB}.a -output ${CURRENTPATH}/build/${LIB}/Fat/${LIB}.a
+lipo -create ${CURRENTPATH}/build/${LIB}/i386/lib/${LIB}.a ${CURRENTPATH}/build/${LIB}/armv6/lib/${LIB}.a ${CURRENTPATH}/build/${LIB}/armv7/lib/${LIB}.a -output ${CURRENTPATH}/build/${LIB}/Fat/lib/${LIB}.a
 
 echo "======== CHECK FAT ARCH ========"
 lipo -info ${CURRENTPATH}/build/${LIB}/Fat/${LIB}.a

@@ -36,9 +36,9 @@ skeleton.o: skeleton.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/secure/_common.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/secure/_stdio.h \
-  /Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/ogg.h \
+  /Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/ogg.h \
   /usr/bin/../lib/clang/3.1/include/stddef.h \
-  /Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/os_types.h \
+  /Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/os_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/inttypes.h \
   skeleton.h
 
@@ -116,11 +116,11 @@ skeleton.o: skeleton.c \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/secure/_stdio.h:
 
-/Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/ogg.h:
+/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/ogg.h:
 
 /usr/bin/../lib/clang/3.1/include/stddef.h:
 
-/Users/ryan/Desktop/speex/build/libogg/Fat/include/ogg/os_types.h:
+/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/Fat/include/ogg/os_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/include/inttypes.h:
 

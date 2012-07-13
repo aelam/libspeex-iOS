@@ -1,6 +1,6 @@
 # libspeex pkg-config source file
 
-prefix=/Users/ryan/Desktop/speex/build/speex/armv7
+prefix=/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/speex/armv7
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
