@@ -52,3 +52,176 @@ PATH: /usr/X11/bin
 configure:2413: checking for a BSD-compatible install
 configure:2481: result: /usr/bin/install -c
 configure:2492: checking whether build environment is sane
+
+## ---------------- ##
+## Cache variables. ##
+## ---------------- ##
+
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value='clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk'
+ac_cv_env_CFLAGS_set=
+ac_cv_env_CFLAGS_value=
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=
+ac_cv_env_CPP_value=
+ac_cv_env_LDFLAGS_set=set
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_build_alias_set=set
+ac_cv_env_build_alias_value=x86_64-apple-darwin11
+ac_cv_env_host_alias_set=set
+ac_cv_env_host_alias_value=i386-apple-darwin11
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_path_install='/usr/bin/install -c'
+
+## ----------------- ##
+## Output variables. ##
+## ----------------- ##
+
+ACLOCAL=''
+AMDEPBACKSLASH=''
+AMDEP_FALSE=''
+AMDEP_TRUE=''
+AMTAR=''
+AR=''
+AUTOCONF=''
+AUTOHEADER=''
+AUTOMAKE=''
+AWK=''
+CC='clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk'
+CCDEPMODE=''
+CFLAGS=''
+CPP=''
+CPPFLAGS=''
+CYGPATH_W=''
+DEBUG=''
+DEFS=''
+DEPDIR=''
+DLLTOOL=''
+DSYMUTIL=''
+DUMPBIN=''
+ECHO_C='\c'
+ECHO_N=''
+ECHO_T=''
+EGREP=''
+EXEEXT=''
+FGREP=''
+GREP=''
+INCLUDE_INTTYPES_H=''
+INCLUDE_STDINT_H=''
+INCLUDE_SYS_TYPES_H=''
+INSTALL_DATA='${INSTALL} -m 644'
+INSTALL_PROGRAM='${INSTALL}'
+INSTALL_SCRIPT='${INSTALL}'
+INSTALL_STRIP_PROGRAM=''
+LD='clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk'
+LDFLAGS=''
+LIBOBJS=''
+LIBS=''
+LIBTOOL=''
+LIBTOOL_DEPS=''
+LIB_AGE=''
+LIB_CURRENT=''
+LIB_REVISION=''
+LIPO=''
+LN_S=''
+LTLIBOBJS=''
+MAINT=''
+MAINTAINER_MODE_FALSE=''
+MAINTAINER_MODE_TRUE=''
+MAKEINFO=''
+MANIFEST_TOOL=''
+MKDIR_P=''
+NM=''
+NMEDIT=''
+OBJDUMP=''
+OBJEXT=''
+OPT=''
+OTOOL64=''
+OTOOL=''
+PACKAGE=''
+PACKAGE_BUGREPORT=''
+PACKAGE_NAME=''
+PACKAGE_STRING=''
+PACKAGE_TARNAME=''
+PACKAGE_URL=''
+PACKAGE_VERSION=''
+PATH_SEPARATOR=':'
+PROFILE=''
+RANLIB=''
+SED=''
+SET_MAKE=''
+SHELL='/bin/sh'
+SIZE16=''
+SIZE32=''
+SIZE64=''
+STRIP=''
+USIZE16=''
+USIZE32=''
+VERSION=''
+ac_ct_AR=''
+ac_ct_CC=''
+ac_ct_DUMPBIN=''
+am__EXEEXT_FALSE=''
+am__EXEEXT_TRUE=''
+am__fastdepCC_FALSE=''
+am__fastdepCC_TRUE=''
+am__include=''
+am__isrc=''
+am__leading_dot=''
+am__quote=''
+am__tar=''
+am__untar=''
+bindir='${exec_prefix}/bin'
+build='x86_64-apple-darwin11'
+build_alias='x86_64-apple-darwin11'
+build_cpu=''
+build_os=''
+build_vendor=''
+datadir='${datarootdir}'
+datarootdir='${prefix}/share'
+docdir='${datarootdir}/doc/${PACKAGE}'
+dvidir='${docdir}'
+exec_prefix='NONE'
+host='i386-apple-darwin11'
+host_alias='i386-apple-darwin11'
+host_cpu=''
+host_os=''
+host_vendor=''
+htmldir='${docdir}'
+includedir='${prefix}/include'
+infodir='${datarootdir}/info'
+install_sh=''
+libdir='${exec_prefix}/lib'
+libexecdir='${exec_prefix}/libexec'
+localedir='${datarootdir}/locale'
+localstatedir='${prefix}/var'
+mandir='${datarootdir}/man'
+mkdir_p=''
+oldincludedir='/usr/include'
+pdfdir='${docdir}'
+prefix='/Users/ryan/Documents/workspace/SpeexKit/libspeex-iOS/build/libogg/i386'
+program_transform_name='s,x,x,'
+psdir='${docdir}'
+sbindir='${exec_prefix}/sbin'
+sharedstatedir='${prefix}/com'
+sysconfdir='${prefix}/etc'
+target_alias=''
+
+## ----------- ##
+## confdefs.h. ##
+## ----------- ##
+
+/* confdefs.h */
+#define PACKAGE_NAME ""
+#define PACKAGE_TARNAME ""
+#define PACKAGE_VERSION ""
+#define PACKAGE_STRING ""
+#define PACKAGE_BUGREPORT ""
+#define PACKAGE_URL ""
+
+configure: caught signal 1
+configure: exit 1
